@@ -1,0 +1,39 @@
+﻿@model VW.Forum.Web.ViewModels.Post.CreatePostViewModel
+
+<h1 align="center">SHARE YOUR PROBLEM</h1>
+
+<form asp-area="Admin" asp-controller="Post" asp-action="CreatePostRequest" method="post">
+
+	<div class="row">
+		<div class="form-group">
+			<div class="col-md-12">
+				<label>TITLE</label>
+				<input required="required" type="text" value="" asp-for="Title" class="form-control input-lg">
+			</div>
+		</div>
+	</div>
+
+	<br />
+
+	<div class="row">
+		<div class="form-group">
+			<div class="col-md-12">
+				<label>CONTENT</label>
+				<textarea required="required" maxlength="5000" rows="5" class="form-control" asp-for="Content"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<br />
+
+	<div class="row">
+		<div class="col-md-12">
+
+			<button class="btn btn-lg pull-right" id="createPostButton">
+				<span>CREATE</span>
+			</button>
+
+		</div>
+	</div>
+
+</form>

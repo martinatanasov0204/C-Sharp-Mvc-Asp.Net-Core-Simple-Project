@@ -1,0 +1,33 @@
+﻿@model VW.Forum.Web.ViewModels.Post.PostViewModel
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8">
+			<!-- the actual blog post: title/author/date/content -->
+			<h1>@Model.Content.Title</h1>
+			<p class="lead">
+				 by @Model.Content.Author
+			</p>
+			<hr>
+			<p>Posted on @Model.Content.DateCreated</p>
+
+			<hr>
+			
+			<p>@Model.Content.Content</p>
+			<br />
+
+			<br />
+
+			<br />
+			<hr>
+			<!-- the comment box -->
+			
+			@await Html.PartialAsync("_CreateComment", Model.Content)
+
+			<hr>
+			<!-- the comments -->
+			
+			@await Html.PartialAsync("_ListComments", Model.Comments)
+		</div>
+	</div>
+</div>

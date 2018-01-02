@@ -1,0 +1,12 @@
+﻿@using VW.Forum.Web.ViewModels.Comment
+@model IEnumerable<VW.Forum.Web.ViewModels.Comment.CommentViewModel>
+@foreach (var comment in Model)
+{
+	<h3>
+		@comment.Author
+		<small> @comment.DateCreated</small>
+	</h3>
+	<p>@comment.Content</p>
+
+	<hr class="style2">
+}

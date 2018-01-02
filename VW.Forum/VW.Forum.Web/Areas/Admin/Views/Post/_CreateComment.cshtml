@@ -1,0 +1,16 @@
+﻿@model VW.Forum.Web.ViewModels.Post.PostContentViewModel
+
+@{
+	Model.Content = String.Empty;
+}
+<div class="well">
+	<h4>Leave a Comment:</h4>
+	<form asp-area="Admin" asp-controller="Comment" asp-action="Post" asp-route-postId="@Model.PostId" method="post">
+		<label asp-for="Content" class="form-group">
+			<textarea class="form-control2" asp-for="Content" rows="3"></textarea>
+		</label>
+		<button type="submit" class="btn2 btn2-primary">Submit</button>
+	</form>
+</div>
+<script src="https://apis.google.com/js/plusone.js">
+</script>

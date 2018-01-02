@@ -1,0 +1,29 @@
+﻿@model VW.Forum.Web.ViewModels.Post.PostsListViewModel
+
+<a asp-controller="Post" asp-action="CreatePost" class="btn3 btn3-blog3 ">
+	<span>ADD POST</span>
+</a>
+<div class="container2">
+	<div id="blog" class="row">
+
+		@foreach (var post in Model.Posts)
+		{
+			<div class="col-md-10 blogShort">
+				<h1>
+					@post.Title
+					<small class="pull-right">@post.DateCreated</small>
+				</h1>
+				<article>
+					
+				</article>
+				<a asp-area="Admin" asp-controller="Post" asp-action="DeletePostRequest" asp-route-postId="@post.Id" method="post" class="btn btn-danger">
+						<span>DELETE</span>
+				</a>
+				<a asp-area="Admin" asp-controller="Post" asp-action="Post" asp-route-id="@post.Id" class="btn btn-blog pull-right">
+					<span>READ MORE</span>
+				</a>
+			</div>
+		}
+
+	</div>
+</div>

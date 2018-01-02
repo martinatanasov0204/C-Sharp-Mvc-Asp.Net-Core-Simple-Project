@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5BF5F2AB-45DF-498F-A0AF-446E4AA5D281}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{F033C72F-4412-430F-AF0B-0514482E6F95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VW.Forum.Data", "VW.Forum.Data\VW.Forum.Data.csproj", "{5F571337-E3C5-4B18-AEB8-9049C29EFAC1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VW.Forum.Entities", "VW.Forum.Entities\VW.Forum.Entities.csproj", "{BA9A6671-E372-47C0-B966-911BECC1A257}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VW.Forum.Services", "VW.Forum.Services\VW.Forum.Services.csproj", "{AE8A07AF-A117-423A-AAE7-5BD4C47BCD44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VW.Forum.Services.Impl", "VW.Forum.Services.Impl\VW.Forum.Services.Impl.csproj", "{3800708C-F533-454C-85A2-E026CDF82FE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VW.Forum.Web", "VW.Forum.Web\VW.Forum.Web.csproj", "{7B051817-80DA-49C2-BDF7-54923BCC76ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F571337-E3C5-4B18-AEB8-9049C29EFAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F571337-E3C5-4B18-AEB8-9049C29EFAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F571337-E3C5-4B18-AEB8-9049C29EFAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F571337-E3C5-4B18-AEB8-9049C29EFAC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9A6671-E372-47C0-B966-911BECC1A257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9A6671-E372-47C0-B966-911BECC1A257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9A6671-E372-47C0-B966-911BECC1A257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9A6671-E372-47C0-B966-911BECC1A257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8A07AF-A117-423A-AAE7-5BD4C47BCD44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8A07AF-A117-423A-AAE7-5BD4C47BCD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8A07AF-A117-423A-AAE7-5BD4C47BCD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8A07AF-A117-423A-AAE7-5BD4C47BCD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3800708C-F533-454C-85A2-E026CDF82FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3800708C-F533-454C-85A2-E026CDF82FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3800708C-F533-454C-85A2-E026CDF82FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3800708C-F533-454C-85A2-E026CDF82FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B051817-80DA-49C2-BDF7-54923BCC76ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B051817-80DA-49C2-BDF7-54923BCC76ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B051817-80DA-49C2-BDF7-54923BCC76ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B051817-80DA-49C2-BDF7-54923BCC76ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F033C72F-4412-430F-AF0B-0514482E6F95} = {5BF5F2AB-45DF-498F-A0AF-446E4AA5D281}
+		{5F571337-E3C5-4B18-AEB8-9049C29EFAC1} = {F033C72F-4412-430F-AF0B-0514482E6F95}
+		{BA9A6671-E372-47C0-B966-911BECC1A257} = {F033C72F-4412-430F-AF0B-0514482E6F95}
+		{AE8A07AF-A117-423A-AAE7-5BD4C47BCD44} = {5BF5F2AB-45DF-498F-A0AF-446E4AA5D281}
+		{3800708C-F533-454C-85A2-E026CDF82FE1} = {5BF5F2AB-45DF-498F-A0AF-446E4AA5D281}
+		{7B051817-80DA-49C2-BDF7-54923BCC76ED} = {5BF5F2AB-45DF-498F-A0AF-446E4AA5D281}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4354651D-AE11-4398-96DE-08177BCE343F}
+	EndGlobalSection
+EndGlobal
